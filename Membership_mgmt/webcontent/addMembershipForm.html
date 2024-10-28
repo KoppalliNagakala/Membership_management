@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Membership</title>
+   
+    <!-- Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        /* Heading styles */
+        h1 {
+        text-align:center;
+            color: #007bff; /* Blue heading color */
+            margin: 20px; /* Add space below the heading */
+        }
+
+        /* Form styles */
+        .form-group {
+            margin-bottom: 20px; /* Add space below form groups */
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: #007bff; /* Blue button background color */
+            border-color: #007bff; /* Blue button border color */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3; /* Darker blue border on hover */
+        }
+
+        /* Input field styles */
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            border-radius: 5px; /* Rounded corners for input fields */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Membership</h1>
+        <form action="AddMembershipServlet" method="post">
+            <div class="form-group">
+                <label for="customerId">Customer ID:</label>
+                <input type="number" class="form-control" id="customerId" name="customerId" required>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" class="form-control" id="startDate" name="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" class="form-control" id="endDate" name="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <input type="text" class="form-control" id="type" name="type" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Membership</button>
+        </form>
+    </div>
+    <!-- Bootstrap JS script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

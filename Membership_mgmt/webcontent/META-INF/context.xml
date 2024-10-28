@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+	<Resource name="jdbc/membershipdb" auth="Container"
+		type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/membershipdb" username="root"
+		password="Anil@73" maxTotal="20" maxIdle="10" maxWaitMillis="-1" />
+</context>
